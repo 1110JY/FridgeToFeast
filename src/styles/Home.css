@@ -1,0 +1,262 @@
+.home-wrapper {
+    background-color: #FFFBEB;
+  }
+  
+  .home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+    margin-bottom: 6rem;
+    position: relative;
+  }
+  
+  .hero-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    color: #92400E;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #F2C288;
+  }
+  
+  .hero-text {
+    font-size: 1.2rem;
+    color: #92400E;
+    max-width: 500px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #F2C288;
+    color: #92400E;
+    border: 2px solid #F2C288;
+  }
+  
+  .btn-primary:hover {
+    background-color: #d9ae79;
+    border-color: #d9ae79;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #F2C288;
+    color: #92400E;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #F2C288;
+  }
+  
+  .hero-image {
+    flex: 1;
+    position: relative;
+    height: 400px;
+    margin-left: 2rem;
+  }
+  
+  .placeholder-square {
+    width: 600px;
+    height: 400px;
+    background-color: #F0F0F0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    border-radius: 20px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  }
+  
+  .placeholder-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .placeholder-circle.coral {
+    background-color: #F26849;
+    top: -40px;  /* Adjust to place circle at top */
+    right: -80px;  /* Adjust to slightly overflow */
+    z-index: 1;
+  }
+  
+  .placeholder-circle.red {
+    background-color: #BF2C2C;
+    bottom: -80px;  /* Adjust to place circle at bottom */
+    left: -40px;  /* Adjust to slightly overflow */
+    z-index: 1;
+  }
+  
+  /* You might also want to adjust the container to ensure proper positioning */
+  .hero-image {
+    flex: 1;
+    position: relative;
+    height: 400px;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Features Section */
+  .features-container {
+    background-color: white;
+    padding: 2rem 0;
+    padding-bottom: 8rem;
+    width: 100%;
+  }
+  
+  .features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .features h2 {
+    color: #92400E;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: bold;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    background-color: #F2CEAE;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .feature-card h3 {
+    color: #92400E;
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .feature-card p {
+    color: #92400E;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 3rem;
+    }
+  
+    .hero-image {
+      margin-left: 1rem;
+    }
+  
+    .placeholder-circle {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .placeholder-square {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      margin: 2rem 0;
+    }
+  
+    .hero-content {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    .hero-buttons {
+      justify-content: center;
+    }
+  
+    .hero-image {
+      margin-left: 0;
+      height: 300px;
+    }
+  
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .features h2 {
+      font-size: 2rem;
+    }
+  
+    .home {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
