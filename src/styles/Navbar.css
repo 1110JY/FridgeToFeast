@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Navbar Styles */
 .navbar {
   display: flex;
@@ -260,3 +261,41 @@
     visibility: visible;
   }
 }
+=======
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--cream);
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    height: 60px;
+    width: auto;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--brown-primary);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--brown-primary);
+    font-weight: 400;
+    font-size: 20px;
+  }
+>>>>>>> 42ab9b41837636ca11bbbf1e673c8fa16cc5c649

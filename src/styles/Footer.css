@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Footer Styling */
 .footer {
   background-color: #E25822; 
@@ -66,3 +67,35 @@
   font-size: 0.9rem;
   opacity: 0.8;
 }
+=======
+.footer {
+    background-color: var(--brown-primary);
+    color: var(--white);
+    padding: 2rem 5%;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-logo {
+    height: 50px;
+    width: auto;
+    filter: brightness(0) invert(1);
+  }
+  
+  .footer-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+>>>>>>> 42ab9b41837636ca11bbbf1e673c8fa16cc5c649

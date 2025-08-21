@@ -10,4 +10,7 @@ root.render(
     <App />
   </Router>
 );
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42ab9b41837636ca11bbbf1e673c8fa16cc5c649

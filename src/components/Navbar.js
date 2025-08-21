@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
@@ -10,6 +11,14 @@ function Navbar() {
     setIsMenuOpen(prevState => !prevState);
   };
 
+=======
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/Navbar.css';
+import logo from '../Logo.PNG';
+
+function Navbar() {
+>>>>>>> 42ab9b41837636ca11bbbf1e673c8fa16cc5c649
   return (
     <nav className="navbar">
       <div className="logo-container">
@@ -17,6 +26,7 @@ function Navbar() {
           <img src={logo} alt="Fridge to Feast Logo" className="logo" />
         </Link>
       </div>
+<<<<<<< HEAD
       <div className="menu-toggle" onClick={toggleMenu}>
         <div></div>
         <div></div>
@@ -38,6 +48,13 @@ function Navbar() {
           </Link>
         </li>
       </ul>
+=======
+      <div className="nav-links">
+        <Link to="/about">About</Link>
+        <Link to="/recipes">Recipes</Link>
+        <Link to="/ingredients">Ingredients Finder</Link>
+      </div>
+>>>>>>> 42ab9b41837636ca11bbbf1e673c8fa16cc5c649
     </nav>
   );
 }
