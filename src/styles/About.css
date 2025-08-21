@@ -1,0 +1,166 @@
+/* General Styling */
+.about-container {
+  color: #4a4a4a;
+  background-color: #FFFBF5;
+  padding: 20px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.about-highlight {
+  color: #E25822; 
+}
+
+.about-subtitle {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 10px auto;
+  color: #555; 
+}
+
+/* Mission Section */
+.about-mission {
+  margin: 40px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: #666;
+}
+
+/* Mission Cards Layout */
+.mission-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.mission-card {
+  background-color: #FFF5E1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  text-align: left;
+  min-width: 280px; 
+}
+
+/* Offer Section */
+.about-offer {
+  margin: 50px 0;
+}
+
+/* Offer Cards Grid */
+.offer-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.offer-card {
+  background-color: #FFE6CC;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Vision Section */
+.about-vision {
+  background-color: #EC6923;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+
+.vision-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.vision-section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px 3%;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .section-title, .vision-section-title {
+    font-size: 2rem;
+  }
+
+  .about-subtitle, .section-description, .vision-content {
+    font-size: 0.95rem;
+  }
+
+  /* Stack mission and offer cards */
+  .mission-cards, .offer-cards {
+    flex-direction: column;
+  }
+
+  .mission-card, .offer-card {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 20px 3%;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .section-title, .vision-section-title {
+    font-size: 1.8rem;
+  }
+
+  .about-subtitle, .section-description, .vision-content {
+    font-size: 0.9rem;
+  }
+
+  /* Adjust padding for smaller screens */
+  .about-container {
+    padding: 15px 3%;
+  }
+
+  .mission-cards, .offer-cards {
+    flex-direction: column;
+  }
+
+  .mission-card, .offer-card {
+    width: 100%;
+    text-align: center;
+  }
+}

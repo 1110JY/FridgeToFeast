@@ -1,0 +1,262 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #FFFBF5;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  position: relative; 
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center; 
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+
+/* Menu Toggle (Mobile) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  padding: 0;
+  position: absolute;
+  right: 5%; 
+}
+
+.menu-toggle div {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-top: 1rem;
+  width: 100%;
+  list-style: none;
+  padding: 10px;
+  transition: transform 0.5s ease-in-out, visibility 0.3s ease-in-out;
+  visibility: visible; 
+}
+
+/* Navbar Links */
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: #000; 
+  font-weight: 400;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effects */
+.nav-links a:hover {
+  color: #E25822; 
+}
+
+/* Underline Animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #E25822;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-links .faq-button-container a::after,
+.nav-links .faq-button-container a:hover::after {
+  display: none !important;
+}
+
+/* FAQ Button*/
+.faq-button-container {
+  display: flex;
+  align-items: center;
+}
+
+.faq-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #E25822;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+  position: relative;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.faq-button svg {
+  height: 1em;
+  fill: currentColor;
+  transition: all 0.3s ease;
+}
+
+.faq-button:hover {
+  color: white !important; 
+}
+
+.faq-button:hover svg {
+  animation: jello-vertical 0.7s both;
+  fill: white !important;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tooltip {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  background-color: #E25822;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  font-weight: 500;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #E25822;
+  background-size: 1000%;
+  background-position: center;
+  transform: rotate(45deg);
+  bottom: -5px;
+  transition-duration: 0.3s;
+  z-index: -1;
+}
+
+.faq-button:hover .tooltip {
+  top: -35px;
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .faq-button-container {
+    justify-content: center;
+    padding: 15px 0;
+    margin-left: 0;
+  }
+  
+  .faq-button {
+    margin: 0 auto;
+  }
+  
+  .nav-links .faq-button::after {
+    display: none;
+  }
+  
+  .tooltip {
+    top: auto;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .tooltip::before {
+    top: -5px;
+    bottom: auto;
+    background-color: #E25822;
+  }
+  
+  .faq-button:hover .tooltip {
+    top: auto;
+    bottom: -60px;
+  }
+}
+
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; 
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--cream);
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    gap: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    transform: translateY(-100%); 
+    visibility: hidden;
+  }
+
+  .nav-links.show {
+    transform: translateY(0); 
+    visibility: visible;
+  }
+}

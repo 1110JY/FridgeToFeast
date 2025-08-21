@@ -1,0 +1,118 @@
+.faq-container {
+    color: #4a4a4a;
+    background-color: #FFFBF5;
+    padding: 20px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #ff7a3d;
+}
+
+.faq-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.faq-category {
+    background: #FFF5E1;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-category-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ff7a3d;
+}
+
+.faq-questions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.faq-question-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question {
+    font-size: 1.1rem;
+    font-weight: 450;
+    color: #000;
+    flex-grow: 1;
+}
+
+.faq-arrow {
+    color: #ff7a3d;
+    font-size: 0.8rem;
+    margin-left: 15px;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.faq-arrow.open {
+    transform: rotate(180deg) scale(1.1);
+}
+
+.faq-answer {
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.5;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 
+        max-height 0.5s ease,
+        opacity 0.3s ease 0.1s,
+        transform 0.3s ease,
+        padding 0.3s ease;
+}
+
+.faq-answer.show {
+    max-height: 500px; 
+    opacity: 1;
+    transform: translateY(0);
+    padding: 15px 0 0 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-title {
+        font-size: 2.5rem;
+    }
+}

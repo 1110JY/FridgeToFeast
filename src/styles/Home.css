@@ -1,0 +1,282 @@
+/* Global variables */
+:root {
+  --s: 60px;  /* Size of the pattern */
+  --c1: #F26849;  /* Coral color */
+  --c2: #BF2C2C;  /* Red color */
+  --_g: var(--c2) 4% 14%, var(--c1) 14% 24%, var(--c2) 22% 34%,
+        var(--c1) 34% 44%, var(--c2) 44% 56%, var(--c1) 56% 66%,
+        var(--c2) 66% 76%, var(--c1) 76% 86%, var(--c2) 86% 96%;
+}
+
+.home-wrapper {
+  background-color: #FFFBF5;
+  margin: 0 auto;
+}
+
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0rem;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  margin-bottom: 6rem;
+  position: relative;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 1000px;
+}
+
+.hero-image {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  flex: 1;
+  height: 400px;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero image styling */
+.hero-img {
+  width: 110%;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Title Styling */
+.hero-main-title {
+  font-size: 4rem;
+  color: #000;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #E25822;
+}
+
+.one-highlight {
+  color: #000;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  max-width: 500px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #E25822;
+  color: #fff;
+  padding: 10px 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  text-decoration: none;
+}
+
+.btn-primary .btn-icon {
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+  display: inline-block;
+  transform: scale(1.8);
+  filter: brightness(0) invert(1);
+}
+
+.btn-secondary {
+  width: 180px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 30px;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  transition-duration: .2s;
+  padding-left: 0; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  text-decoration: none;
+}
+
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
+}
+
+.btn-secondary:hover {
+  transition-duration: .5s;
+}
+
+.btn-secondary:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+.btn-secondary:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+
+/* Feature Section */
+.features-container {
+  background-color: #fff;
+  padding: 2rem 0;
+  padding-bottom: 8rem;
+}
+
+.features {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.features h2 {
+  color: #000;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: bold;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: #FFF5E1;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.feature-card p {
+  color: #4a4a4a;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Circle Decoration */
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  background: radial-gradient(100% 100% at 100% 0, var(--c1) 4%, var(--_g), #0008 96%, #0000),
+    radial-gradient(100% 100% at 0 100%, #0000, #0008 4%, var(--_g), var(--c1) 96%);
+  background-size: var(--s) var(--s);
+  z-index: 1;
+}
+
+.circle.coral {
+  top: -40px;
+  right: -80px;
+  height: 150px;
+  width: 150px;
+}
+
+.circle.red {
+  bottom: -80px;
+  left: -40px;
+  width: 200px;
+  height: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-bottom: 2rem;
+  }
+
+  .hero-image {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height: auto;
+  }
+
+  .hero-main-title {
+    font-size: 3rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .circle.coral,
+  .circle.red {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-main-title {
+    font-size: 3rem;
+  }
+
+  .hero-text {
+    font-size: 0.9rem;
+  }
+}

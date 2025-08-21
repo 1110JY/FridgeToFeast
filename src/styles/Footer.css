@@ -1,0 +1,68 @@
+/* Footer Styling */
+.footer {
+  background-color: #E25822; 
+  color: white;
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+/* Footer Content Layout */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer Logo */
+.footer-logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Footer Title */
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Footer Slogan */
+.footer-slogan {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* Footer Icons Section */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Icon Styling */
+.footer-icon {
+  width: 25px;  
+  height: 25px; 
+  filter: brightness(0) invert(1); 
+}
+
+/* Divider Lines */
+.divider {
+  width: 60px;
+  height: 1px;
+  background-color: white;
+  display: inline-block;
+  opacity: 50%;
+}
+
+
+/* Copyright Notice */
+.copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

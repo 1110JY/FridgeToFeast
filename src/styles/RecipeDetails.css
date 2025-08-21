@@ -1,0 +1,108 @@
+/* RecipeDetails.css */
+.recipe-detail-page {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #FFFBF5; 
+  border-radius: 10px;
+}
+
+.back-button {
+  color: #E25822;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background-color: #F26849;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+.recipe-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.recipe-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.recipe-stats div {
+  text-align: left;
+  background-color: #ffffff; 
+  border-radius: 5px; 
+  border: 2px solid #f0f0f0; 
+  padding: 15px;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.recipe-stats div p {
+  margin: 0;
+}
+
+h2 {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  border: 2px solid #f0f0f0; 
+  padding: 20px;
+  padding-left: 40px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.servings-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.servings-counter button {
+  background-color: #F26849;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.servings-counter button:hover {
+  background-color: #d9534f;
+}
+
+.servings-counter span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
